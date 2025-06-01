@@ -252,6 +252,28 @@
         
         // 初始化香港地图
         function initHongKongMap(regionData) {
+            // 中英文地区名称映射表
+            const regionNameMapping = {
+                '中西区': 'Central and Western',
+                '湾仔区': 'Wan Chai',
+                '东区': 'Eastern',
+                '南区': 'Southern',
+                '油尖旺区': 'Yau Tsim Mong',
+                '深水埗区': 'Sham Shui Po',
+                '九龙城区': 'Kowloon City',
+                '黄大仙区': 'Wong Tai Sin',
+                '观塘区': 'Kwun Tong',
+                '荃湾区': 'Tsuen Wan',
+                '屯门区': 'Tuen Mun',
+                '元朗区': 'Yuen Long',
+                '北区': 'North',
+                '大埔区': 'Tai Po',
+                '沙田区': 'Sha Tin',
+                '西贡区': 'Sai Kung',
+                '葵青区': 'Kwai Tsing',
+                '离岛区': 'Islands'
+            };
+            
             fetch('/static/js/hongkong.json')
                 .then(response => response.json())
                 .then(hongkongJson => {
@@ -261,10 +283,11 @@
                     const myChart = echarts.init(chartDom);
                     charts.push(myChart);
                     
-                    // 定义数据和视觉映射
+                    // 定义数据和视觉映射，使用名称映射转换
                     const data = regionData.regions.map((name, index) => {
+                        const englishName = regionNameMapping[name] || name;
                         return {
-                            name: name,
+                            name: englishName,
                             value: regionData.total_cases[index]
                         };
                     });
@@ -479,4 +502,4 @@
         }
     </script>
 </body>
-</html> 
+</html>
