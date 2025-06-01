@@ -1,0 +1,14 @@
+[project]
+name = "ai-lesson"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "dashscope>=1.23.3",
+    "dotenv>=0.9.9",
+    "ipykernel>=6.29.5",
+    "modelscope>=1.26.0",
+]
+[tool.uv]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
