@@ -1,0 +1,61 @@
+|--- age <= 29.50
+|   |--- marital_status <= 0.50
+|   |   |--- premium_amount <= 11649.50
+|   |   |   |--- education_level <= 1.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- education_level >  1.50
+|   |   |   |   |--- education_level <= 2.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- education_level >  2.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- premium_amount >  11649.50
+|   |   |   |--- class: 0
+|   |--- marital_status >  0.50
+|   |   |--- marital_status <= 1.50
+|   |   |   |--- occupation <= 2.50
+|   |   |   |   |--- family_members <= 3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- family_members >  3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- occupation >  2.50
+|   |   |   |   |--- birth_region <= 15.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- birth_region >  15.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- marital_status >  1.50
+|   |   |   |--- policy_type <= 5.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- policy_type >  5.50
+|   |   |   |   |--- class: 0
+|--- age >  29.50
+|   |--- age <= 60.50
+|   |   |--- occupation <= 3.50
+|   |   |   |--- class: 1
+|   |   |--- occupation >  3.50
+|   |   |   |--- policy_type <= 1.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- policy_type >  1.50
+|   |   |   |   |--- premium_amount <= 11511.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- premium_amount >  11511.50
+|   |   |   |   |   |--- class: 1
+|   |--- age >  60.50
+|   |   |--- family_members <= 3.50
+|   |   |   |--- education_level <= 2.50
+|   |   |   |   |--- gender <= 0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- gender >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- education_level >  2.50
+|   |   |   |   |--- premium_amount <= 13509.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- premium_amount >  13509.00
+|   |   |   |   |   |--- class: 0
+|   |   |--- family_members >  3.50
+|   |   |   |--- marital_status <= 1.50
+|   |   |   |   |--- education_level <= 2.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- education_level >  2.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- marital_status >  1.50
+|   |   |   |   |--- class: 0

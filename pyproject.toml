@@ -3,7 +3,7 @@ name = "ai-lesson"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 dependencies = [
     "dashscope>=1.23.3",
     "dotenv>=0.9.9",
@@ -15,7 +15,10 @@ dependencies = [
     "numpy>=2.0.2",
     "openpyxl>=3.1.5",
     "pandas>=2.2.3",
+    "scikit-learn>=1.6.1",
     "seaborn>=0.13.2",
+    "gensim>=4.3.2",
 ]
 [tool.uv]
-index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"

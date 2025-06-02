@@ -1,0 +1,15 @@
+feature,importance
+age,0.49422213730139875
+marital_status,0.24224781758512984
+occupation,0.07665555836034868
+family_members,0.06806794524099263
+education_level,0.06144158204910412
+gender,0.022467323825220504
+policy_type,0.01644581744507417
+premium_amount,0.015369103136440592
+birth_region,0.0030827150562908216
+policy_id,0.0
+insurance_region,0.0
+income_level,0.0
+policy_term,0.0
+claim_history,0.0
